@@ -1,0 +1,273 @@
+/* base styles */
+*, *:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0 0 1em 0;
+}
+
+h2 {
+  font-size: 1.85rem;
+  color: #000000;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #525252;
+  margin: 0 0 0.25em;
+}
+
+h4 + span {
+  display: block;
+  margin-bottom: 1.65em;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.faq-list {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin-top: .5em; 
+}
+
+.faq-item {
+    margin-bottom: .5em; 
+}
+
+.faq-question {
+    font-size: 1rem; 
+    color: #0a8d0a; 
+    cursor: pointer; 
+    transition: color .3s ease, text-decoration .3s ease; 
+}
+
+.faq-question:hover {
+    color: #ff6b6b; 
+    text-decoration: underline; 
+}
+
+.faq-item p {
+    font-size: .9rem; 
+    margin-top: .5em; 
+}
+
+.diploma-list {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0; 
+}
+
+.diploma-list li {
+    margin-bottom: .5em; 
+}
+
+.diploma-list a {
+    color: #0a8d0a; 
+    text-decoration: none; 
+    transition: color .3s ease, text-decoration .3s ease; 
+}
+
+.diploma-list a:hover {
+    color: #ff6b6b; 
+    text-decoration: underline; 
+}
+
+.diploma-list a.active {
+    font-weight: bold; 
+    color:#ff6b6b; 
+}
+
+a {
+    color: #0a8d0a; 
+    text-decoration: none; 
+}
+
+nav a {
+    display: block; 
+    font-size: 1.25rem; 
+    color: #0a8d0a; 
+    padding-bottom:.15em; 
+    border-bottom:none; 
+    font-weight:bold; 
+    transition:.3s ease-in-out; 
+}
+
+nav a:hover {
+    text-decoration:underline; 
+}
+
+nav a.active,
+nav a.nav-active { 
+    color:#ff6b6b; 
+    border-bottom:none; 
+}
+
+nav a.active:hover {
+    text-decoration:none; 
+}
+
+.session a {
+    display:block; 
+    color:#383838; 
+    text-decoration:none; 
+    border:.5px solid currentColor; 
+    padding:.85em .75em; 
+    border-radius:.35em; 
+}
+
+.session a:hover,
+a.session-active {
+    color:#489b9a; 
+}
+
+.logo {
+   width:220px; 
+}
+
+.img-feat {
+   width:auto; 
+   border-radius:.35em; 
+   margin-bottom:.75em; 
+}
+
+.categories {
+   margin-top:.75em; 
+   margin-bottom:.75em; 
+}
+
+form { 
+   font-size:.95rem; 
+   margin:auto; 
+   max-width:400px;  
+   padding-top:.75em;
+}  
+
+label { 
+   display:block; 
+   font-weight:bold; 
+   margin-bottom:.5em; 
+}
+
+input {  
+   font-size:1rem;  
+   margin-top:.35em;  
+   display:block;  
+   width:100%;  
+   padding:.75em;  
+   border:.5px solid #dbdbdb;  
+   border-radius:.35em;  
+}  
+
+input:focus {  
+   outline-color:#0a8d0a ;  
+}  
+
+input[type="submit"] {  
+   cursor:pointer ;  
+   color:#fff ;  
+   font-weight:bold ;  
+   padding:.65em .75em ;  
+   background-color:#0a8d0a ;  
+   border:none ;  
+}  
+
+input[type="submit"]:hover {  
+   background-color:#065406 ;  
+}  
+
+.app {  
+   min-height:100vh ;  
+   display:flex ;  
+   flex-direction: column ;  
+}  
+
+header {  
+   padding:.75em .5em ;  
+}  
+
+.not-found {  
+   text-align:center ;  
+}  
+
+.not-found::before {  
+   content:"😕";  
+   margin-right:.35em ;  
+}  
+
+footer.container {  
+   padding:.75em .5em ;  
+   margin-top:auto ;  
+   border-top:.5px solid rgb(219,219,219);  
+}  
+
+.container {  
+   width:90%;   
+   max-width:800px ;   
+   margin:0 auto ;   
+}  
+
+@media (max-width:767px) {  
+   nav a {  
+      padding:.35em ,0 ;   
+      font-size:.9rem;   
+   }  
+}  
+
+@media (min-width:768px) {   
+header, nav {   
+      display:flex ;   
+      align-items:center ;   
+      justify-content:flex-start;
+      flex-wrap:no-wrap;
+      gap:.5em;
+      padding-left:.75em;
+      padding-right:.75em;
+      padding-top:.25em;
+      padding-bottom:.25em
+}    
+   
+header.container {   
+      margin-bottom:1em ;   
+}    
+   
+nav {   
+      margin-left:auto ;   
+}    
+   
+nav a {   
+      margin-left:1.25em ;   
+}    
+   
+.nav-active {   
+      border-bottom:2px solid currentColor ;   
+}    
+   
+.categories {   
+      display:grid ;   
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));   
+}
+}
